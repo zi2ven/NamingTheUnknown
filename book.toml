@@ -1,0 +1,18 @@
+[book]
+title = "命名未知"
+authors = ["zi2ven"]
+language = "zh"
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "3.1.0" 
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[preprocessor.katex]
+after = ["links"]
+
+[output.html]
+additional-css = ["mdbook-admonish.css"]
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
